@@ -1,0 +1,33 @@
+{
+  "name": "@owlcode/repository-blueprint-manager",
+  "version": "0.0.0",
+  "description": "Manage multiple repositories by aligning commonly used configuration files",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && mkdir dist && bun build src/index.ts --target=node --format=esm > dist/index.js",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owlcode/repository-blueprint-manager.git"
+  },
+  "author": "Dawid Sowa",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash.mergewith": "^4.6.7",
+    "lodash.mergewith": "^4.6.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/git-url-parse": "^9.0.1",
+    "@types/node": "^20.7.2",
+    "bun-types": "^1.0.5-canary.20231008T140131",
+    "git-url-parse": "^13.1.0",
+    "rimraf": "^5.0.5",
+    "simple-git": "^3.20.0",
+    "tslog": "^4.9.2",
+    "zod": "^3.22.2",
+    "semantic-release": "^22.0.5"
+  }
+}

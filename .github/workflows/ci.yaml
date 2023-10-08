@@ -1,0 +1,16 @@
+name: CI
+run-name: ${{ github.actor }} running
+on: [push]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run build
+      - run: bunx semantic-release
+  
