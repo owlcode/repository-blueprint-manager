@@ -1,5 +1,5 @@
 {
-  "name": "@owlcode/repository-blueprint-manager",
+  "name": "repository-blueprint-manager",
   "version": "0.0.0",
   "description": "Manage multiple repositories by aligning commonly used configuration files",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/owlcode/repository-blueprint-manager.git"
+    "url": "git+https://github.com/owlcode/repository-blueprint-manager.git"
   },
   "author": "Dawid Sowa",
   "license": "MIT",
