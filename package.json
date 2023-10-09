@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Manage multiple repositories by aligning commonly used configuration files",
   "type": "module",
-  "main": "dist/index.js",
+  "bin": {
+    "rbm": "dist/index.js",
+    "repository-blueprint-manager": "dist/index.js"
+  },
   "scripts": {
     "build": "rimraf dist && mkdir dist && bun build src/index.ts --target=node --format=esm > dist/index.js",
     "semantic-release": "semantic-release"
